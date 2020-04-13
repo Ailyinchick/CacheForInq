@@ -2,27 +2,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Login</title>
+    <title>Home</title>
     <meta charset="utf-8">
 </head>
 <body>
-<p> Picture: ${count} </p>
-<form action="nature">
-    <input type="submit" name="Submit" value="Add nature">
+<p> Picture: ${picture}</p>
+<p> Count: ${count} </p>
+<c:forEach items="${cars}" var="car">
+<form action="/${car.name}">
+    <input type="submit" value="Add ${car.name}">
 </form>
-
-<form action="car">
-    <input type="submit" name="Submit" value="Add car">
-</form>
-
-<form action="bart">
-    <input type="submit" name="Submit" value="Add bart">
-</form>
+</c:forEach>
 
 <c:forEach items="${cache}" var="item">
-    <p>
-            ${item}
-    </p>
+    ${item.image}
 </c:forEach>
 
 </body>
