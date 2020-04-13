@@ -18,12 +18,7 @@ public class CarRepository implements DaoRepos<Car> {
     }
 
     public Car findCarByName(String carName) {
+        System.out.println("Лезем в БД");
         return findAll(Car.class, sessionFactory).stream().filter(car -> car.getName().equals(carName)).findFirst().get();
-/*        Car car = new Car();
-        for (Car iteratingCar : findAll(Car.class, sessionFactory)
-        ) {
-            if (iteratingCar.getName().equals(carName)) car = iteratingCar;
-        }
-        return car;*/
     }
 }
