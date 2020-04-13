@@ -6,18 +6,24 @@
     <meta charset="utf-8">
 </head>
 <body>
-<p> Picture: ${picture} </p>
+<p> Picture: ${count} </p>
 <form action="nature">
-    <input type="submit" name="Submit" value="Show nature">
+    <input type="submit" name="Submit" value="Add nature">
 </form>
 
 <form action="car">
-    <input type="submit" name="Submit" value="Show car">
+    <input type="submit" name="Submit" value="Add car">
 </form>
 
 <form action="bart">
-    <input type="submit" name="Submit" value="Show bart">
+    <input type="submit" name="Submit" value="Add bart">
 </form>
+
+<c:forEach items="${cache}" var="item">
+    <p>
+            ${item}
+    </p>
+</c:forEach>
 
 </body>
 </html>
