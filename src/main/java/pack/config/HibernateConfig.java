@@ -50,7 +50,6 @@ public class HibernateConfig {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan("pack");
-
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
