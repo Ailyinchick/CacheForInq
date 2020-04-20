@@ -46,4 +46,10 @@ public class Cache {
         return cache;
     }
 
+    public static String getCarImages() {
+        StringBuilder ansString = new StringBuilder();
+        Cache.getCache().keySet().forEach(car -> ansString.append(" ").append(car.getImage()));
+        return ansString.toString();
+    }
+
 }
