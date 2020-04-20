@@ -5,7 +5,7 @@ SELECT * FROM forcache.car;
 insert into car values
 (1, "bmw x5", "<img src=\"resources/images/bmw_x5.jpg\" alt=\"bmw-x5\">"),
 (2, "audi quattro", "<img src=\"resources/images/audiQuattroB.jpg\" alt=\"audiQuattroB\">"),
-(3, "camaro-ss", "<img src=\"resources/images/camaro-ss.jpg\" alt=\"camaro-ss\">"),
+(3, "camaro-ss", "<img src=\"resources/images/camaro_ss.jpg\" alt=\"camaro-ss\">"),
 (4, "eclipse", "<img src=\"resources/images/eclipse.jpg\" alt=\"eclipse\">"),
 (5, "eleanor", "<img src=\"resources/images/eleanor.jpg\" alt=\"eleanor\">"),
 (6, "EXO-X", "<img src=\"resources/images/EXO_X.jpg\" alt=\"EXO-X\">"),
